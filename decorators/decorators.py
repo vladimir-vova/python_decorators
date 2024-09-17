@@ -13,4 +13,4 @@ def fout(func):
 
 if __name__ == "__main__":
     summ = fout(summ)
-    print(summ)
+    print(summ(1, 2))
