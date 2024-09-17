@@ -1,7 +1,3 @@
-
-def summ(a, b):
-    return a + b
-
 def fout(func):
     def wrapper(a, b):
         print("Start")
@@ -10,7 +6,10 @@ def fout(func):
         return result
     return wrapper
 
+@fout
+def summ(a, b):
+    return a + b
+
 
 if __name__ == "__main__":
-    summ = fout(summ)
     print(summ(1, 2))
