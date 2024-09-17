@@ -1,7 +1,7 @@
 def fout(func):
-    def wrapper(a, b):
+    def wrapper(*args):
         print("Start")
-        result = func(a, b)
+        result = func(*args)
         print("End")
         return result
     return wrapper
