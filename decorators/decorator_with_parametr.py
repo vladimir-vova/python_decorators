@@ -13,9 +13,9 @@ def type_id(type_):
     return concat
 
 
-@type_id(str)
 def text(a, b):
     return a + b
 
 if __name__ == '__main__':
-    print(text('1', '2'))
+    text = type_id(int)(text)(1, 2)
+    print(text)
