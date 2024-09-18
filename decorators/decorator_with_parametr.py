@@ -17,5 +17,5 @@ def text(a, b):
     return a + b
 
 if __name__ == '__main__':
-    text = type_id(int)(text)(1, 2)
-    print(text)
+    text = type_id(int)(text)
+    print(text(3, 5))
